@@ -1,5 +1,6 @@
 :root {
    --primary-color: #536dfe;
+   --charcoal: #494949;
 }
 
 * {
@@ -20,7 +21,8 @@ html {
 
 body {
    font-family: Poppins, sans-serif;
-   color: #212121;
+   color: var(--charcoal);
+   font-size: 16px;
 }
 
 img {
@@ -54,7 +56,7 @@ header .brand {
    font-weight: 300;
    letter-spacing: .03rem;
    text-transform: uppercase;
-   color: #212121;
+   color: var(--charcoal);
 }
 
 header .brand span {
@@ -66,7 +68,7 @@ header .brand span {
 header .navbar a {
    font-size: .875rem;
    padding: 0 1rem;
-   color:#212121;
+   color:var(--charcoal);
    font-weight: 400;
    letter-spacing: .04rem;
 }
@@ -116,7 +118,7 @@ section {
    height: 100vh;
    background: #fbfafa url(svgs/hello.svg) no-repeat bottom right/55%;
    object-fit: cover;
-   color: #212121;
+   color: var(--charcoal);
 }
 
 h1 {
@@ -149,11 +151,12 @@ section h2 {
    text-align: center;
    font-size: 2rem;
    margin-bottom: 1rem;
+   font-weight: 500;
 }
 
 .about h5 {
-   font-size: 1.625rem;
-   font-weight: 500;
+   font-size: 1.25rem;
+   font-weight: 400;
 }
 
 .about ul {
@@ -164,16 +167,16 @@ section h2 {
 }
 
 .about ul ::marker {
-   font-size: 2rem;
+   font-size: 1.25rem;
 }
 
 .about li {
    display: list-item;
-   font-size: 1rem;
+   font-size: .875rem;
 }
 
 .card {
-   color: #212121;
+   color: var(--charcoal);
    background: #fbfafa;
    padding: 1rem;
    border-radius: .5rem;
@@ -221,12 +224,12 @@ section h2 {
    font-size: .875rem;
    font-weight: 300;
    margin-bottom: 1rem;
-   color: #212121;
+   color: var(--charcoal);
 }
 
 .card-alt h3 {
    font-size: .875rem;
-   color: #212121;
+   color: var(--charcoal);
    font-weight: 600;
    line-height: 1;
 }
@@ -277,7 +280,7 @@ input, textarea {
    background: #fff;
    border: 1px solid rgba(0,0,0,0.5);
    outline: none;
-   color: #212121;
+   color: var(--charcoal);
    width: 100%;
    box-sizing: border-box;
    opacity: .75;
