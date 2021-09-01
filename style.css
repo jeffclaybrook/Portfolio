@@ -161,7 +161,6 @@ section h2 {
 
 .about ul {
    list-style: disc;
-   list-style-position: inside;
    list-style-image: url(svgs/checkmark.svg);
    line-height: 1.75;
 }
