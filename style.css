@@ -164,7 +164,7 @@ section h2 {
    list-style-position: outside;
    list-style-image: url(svgs/checkmark.svg);
    line-height: 1.4;
-   padding-left: 1rem;
+   margin-left: 1rem;
 }
 
 .about ul ::marker {
@@ -175,6 +175,7 @@ section h2 {
    display: list-item;
    font-size: .875rem;
    margin-bottom: .75rem;
+   padding-left: .5rem;
 }
 
 .card {
