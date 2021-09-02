@@ -163,18 +163,18 @@ section h2 {
    list-style: disc;
    list-style-position: outside;
    list-style-image: url(svgs/checkmark.svg);
-   line-height: 1.25;
+   line-height: 1.5;
    margin-left: 1rem;
 }
 
 .about ul ::marker {
-   font-size: 1.25rem;
+   font-size: 1.5rem;
 }
 
 .about li {
    display: list-item;
    font-size: .875rem;
-   margin-bottom: .5rem;
+   margin-bottom: .75rem;
 }
 
 .card {
