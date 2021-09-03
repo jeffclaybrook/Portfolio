@@ -20,9 +20,9 @@ html {
 }
 
 body {
-   font-family: Poppins, sans-serif;
+   font-family: 'Poppins', sans-serif;
    color: var(--charcoal);
-   font-size: 16px;
+   font-size: 100%;
 }
 
 img {
@@ -102,12 +102,17 @@ header .icons .fas {
    color: #fff;
    padding: .75rem 1.5rem;
    display: inline-block;
-   border: 1px solid transparent;
+   border-color: var(--primary-color);
    border-radius: .25rem;
    text-transform: uppercase;
    letter-spacing: .09rem;
    text-align: center;
    font-weight: 600;
+   transition: .2s ease;
+}
+
+.filled-btn:hover {
+   transform: scale(1.05);
 }
 
 section {
@@ -164,11 +169,11 @@ section h2 {
    list-style-position: outside;
    list-style-image: url(svgs/checkmark.svg);
    line-height: 1.4;
-   margin-left: 1rem;
+   padding-left: 1.5rem;
 }
 
 .about ul ::marker {
-   font-size: 1.5rem;
+   font-size: 2rem;
 }
 
 .about li {
@@ -281,19 +286,21 @@ form label {
 input, textarea {
    border-radius: .25rem;
    background: #fff;
-   border: 1px solid rgba(0,0,0,0.5);
+   border: 1px solid #ccc;
    outline: none;
    color: var(--charcoal);
    width: 100%;
    box-sizing: border-box;
    opacity: .75;
-   font-family: Poppins, sans-serif;
-   padding: .625rem;
+   font-family: 'Poppins', sans-serif;
+   padding: .75rem .625rem;
    margin-bottom: 1rem;
+   transition: .2s;
 }
 
 textarea {
    resize: none;
+   line-height: 1.5;
 }
 
 input:hover, textarea:hover {
@@ -301,6 +308,10 @@ input:hover, textarea:hover {
 }
 
 input:focus, textarea:focus {
+   border: 1px solid var(--primary-color);
+}
+
+input:active, textarea:active {
    border: 1px solid var(--primary-color);
 }
 
@@ -312,12 +323,14 @@ button {
    border: 1px solid transparent;
    border-radius: .25rem;
    text-transform: uppercase;
-   letter-spacing: .09rem;
+   letter-spacing: .03rem;
    text-align: center;
    font-weight: 600;
    margin-right: auto;
    cursor: pointer;
+   transition: .3s;
 }
+
 
 footer {
    background: #000;
