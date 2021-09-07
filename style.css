@@ -368,6 +368,12 @@ footer a {
    height: 3rem;
    border-radius: 50%;
    font-size: 1.15rem;
+   transition: .15s ease;
+}
+
+footer a:hover {
+   background: var(--primary-color);
+   border: 1px solid var(--primary-color);
 }
 
 footer p {
