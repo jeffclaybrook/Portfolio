@@ -30,6 +30,19 @@ window.onscroll = () =>{
   });
 }
 
+let header = document.querySelector('header');
+var scrollPrev = window.pageYOffset;
+window.onscroll = function () {
+    var scrollCur = window.pageYOffset;
+    if (scrollPrev > scrollCur) {
+        header.style.top = "0";
+    } else {
+        header.style.top = "-90px";
+
+    }
+    scrollPrev = scrollCur;
+}
+
 //
 
 !function (t, e) {
