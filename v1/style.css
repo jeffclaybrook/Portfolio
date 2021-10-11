@@ -1,0 +1,641 @@
+:root {
+   --red: #f44336;
+   --black: #161616;
+   --green: #2B7178;
+   --turquoise: #3AAFA9;
+   --light-gray: #DEF2F1;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+
+html {
+   -webkit-text-size-adjust: 100%;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Assistant', sans-serif;
+   font-size: 16px;
+   color: #161616;
+}
+
+img {
+   max-width: 100%;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+header {
+   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), rgb(56, 55, 105);
+   height: 100vh;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   margin: 0 auto;
+}
+
+nav .brand {
+   color: #fff;
+   margin-right: auto;
+   display: inline-flex;
+}
+
+.nav-links ul li {
+   display: inline-flex;
+   position: relative;
+}
+
+.nav-links ul li a {
+   color: #ffffff;
+   text-decoration: none;
+   font-size: 14px;
+   letter-spacing: .075rem;
+   font-weight: 300;
+}
+
+nav .fas {
+   display: none;
+}
+
+.text-box {
+   width: 80%;
+   color: #ffffff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.text-box h1 {
+   font-size: 58px;
+   color: #ffffff;
+   font-weight: 400;
+   margin-bottom: .5rem;
+   letter-spacing: .1rem;
+}
+
+.text-box h2 {
+   font-size: 16px;
+   color: #ffffff;
+   font-weight: 400;
+   margin-bottom: .5rem;
+}
+
+.text-box p {
+   font-size: 16px;
+   color: #fff;
+   opacity: .8;
+   margin-bottom: 1.25rem;
+   font-weight: 500;
+   position: relative;
+   display: inline-block;
+   text-transform: uppercase;
+   letter-spacing: .06rem;
+}
+
+.text-box p::before {
+   content: '';
+   position: relative;
+   background: #ffffff;
+   height: 1px;
+   width: 3rem;
+   display: inline-block;
+   margin-right: 20px;
+   vertical-align: middle;
+}
+
+.text-box p::after {
+   content: '';
+   position: relative;
+   background: #ffffff;
+   height: 1px;
+   width: 3rem;
+   display: inline-block;
+   margin-left: 20px;
+   vertical-align: middle;
+}
+
+.hero-btn {
+   display: inline-block;
+   text-decoration: none;
+   color: #ffffff;
+   border: 0px solid var(--red);
+   padding: 12px 34px;
+   font-size: 14px;
+   background: var(--turquoise);
+   position: relative;
+   cursor: pointer;
+   letter-spacing: .03em;
+   transition: .2s ease-out;
+   border-radius: 6px;
+}
+
+.hero-btn:hover {
+   border: 1px solid var(--red);
+   background: var(--red);
+   transform: scale(1.05);
+}
+
+.red-btn {
+   border: 1px solid var(--red);
+   background: transparent;
+   color: var(--red);
+}
+
+.red-btn:hover {
+   color: #fff;
+}
+
+.paper-airplane img {
+   position: absolute;
+   bottom: 1rem;
+   right: 1rem;
+   width: 8%;
+}
+
+section {
+   width: 80%;
+   margin: 4rem auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+section h1 {
+   font-size: 36px;
+   font-weight: 400;
+}
+
+section h2 {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+section p {
+   color: #777;
+   font-size: 14px;
+   font-weight: 300;
+}
+
+.row {
+   display: flex;
+   justify-content: space-between;
+}
+
+.course-col, .campus-col, .facilities-col, .certificates-col {
+   flex-basis: 31%;
+   border-radius: 10px;
+   margin: 2rem auto;
+}
+
+.course-col {
+   background: #fff3f3;
+   transition: 0.5s;
+   padding: 2rem;
+   text-align: center;
+}
+
+.campus-col, .facilities-col, .certificates-col {
+   position: relative;
+   overflow: hidden;
+}
+
+.course h3 {
+   text-align: center;
+   font-weight: 600;
+   font-size: 1rem;
+   margin-bottom: .75rem;
+}
+
+.course-col:hover {
+   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.campus-col img, .facilities-col img, .certificates-col img, .blog-left img, .about-us img {
+   width: 100%;
+   border-radius: 10px;
+   display: block;
+}
+
+.campus-col h3 {
+   text-align: center;
+}
+
+.layer {
+   background: transparent;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transition: 0.5s;
+}
+
+.layer:hover {
+   background: rgba(226, 0, 0, 0.7);
+}
+
+.layer h3 {
+   width: 100%;
+   font-weight: 500;
+   color: #ffffff;
+   font-size: 26px;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   position: absolute;
+   opacity: 0;
+   transition: 0.5s;
+}
+
+.layer:hover h3 {
+   bottom: 49%;
+   opacity: 1;
+}
+
+.facilities h3, .testimonial h3, .certificates h3 {
+   font-weight: 600;
+   font-size: 1rem;
+   margin: .5rem auto .25rem auto;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
+   margin: 2rem auto;
+}
+
+.testimonial {
+   padding: 25px;
+   text-align: left;
+   background: #fff3f3;
+   display: inline-flex;
+   align-items: flex-start;
+   border-radius: 10px;
+}
+
+.testimonial img {
+   width: 5rem;
+   border-radius: 50%;
+   margin-right: 20px;
+}
+
+.testimonial .fas, .far {
+   color: var(--red);
+}
+
+.cta {
+   width: 80%;
+   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/imagery/conference_room.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   border-radius: 10px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 4rem auto;
+   padding: 8rem;
+}
+
+.cta h1 {
+   color: #ffffff;
+   font-size: 30px;
+   font-weight: 600;
+}
+
+.cta .hero-btn {
+   margin: 2rem auto 0 auto;
+}
+
+.about-us {
+   width: 80%;
+   margin: 4rem auto;
+}
+
+.about-col {
+   flex-basis: 47%;
+}
+
+.about-col img {
+   width: 100%;
+}
+
+.about-us h1 {
+   line-height: 1.4;
+   margin-bottom: .5rem;
+   font-size: 30px;
+}
+
+.about-us p {
+   margin-bottom: 1.25rem;
+}
+
+.about-us .hero-btn {
+   margin-bottom: 1.25rem;
+}
+
+.blog-left {
+   flex-basis: 65%;
+}
+
+.blog-right {
+   flex-basis: 32%;
+}
+
+.blog-left h2 {
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-top: 2rem;
+   margin-bottom: .75rem;
+}
+
+.blog-right h3 {
+   background: var(--red);
+   color: #fff;
+   font-weight: 600;
+   font-size: 1rem;
+   padding: .5rem 1rem;
+   margin-bottom: .75rem;
+}
+
+.blog-right div {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #777;
+   font-size: 14px;
+   line-height: 2.5;
+   padding: 0 1rem;
+}
+
+.comment-box {
+   border: 1px solid #ccc;
+   margin: 50px 0;
+   padding: 10px 20px;
+}
+
+.comment-box h3 {
+   text-align: left;
+}
+
+.comment-form input, .comment-form textarea {
+   width: 100%;
+   padding: 10px;
+   margin: 15px 0;
+   border: none;
+   outline: none;
+   background: #f0f0f0;
+}
+
+textarea {
+   resize: none;
+}
+
+.comment-form button {
+   margin: 10px 0;
+}
+
+.contact-col {
+   flex-basis: 48%;
+}
+
+.contact-col div {
+   display: flex;
+   align-items: center;
+   margin-bottom: 2rem;
+}
+
+.contact-col div .fas {
+   font-size: 24px;
+   color: var(--purple);
+   margin-right: 1.5rem;
+}
+
+.contact-col div h5 {
+   font-size: 16px;
+   color: #555;
+   font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea {
+   width: 100%;
+   padding: 15px;
+   margin-bottom: 17px;
+   outline: none;
+   border: 1px solid #ccc;
+}
+
+.link {
+   text-decoration: none;
+   cursor: pointer;
+   color: #555;
+   font-size: 20px;
+   font-weight: 400;
+}
+
+footer {
+   width: 100%;
+   text-align: center;
+   background-color: #f0f0f0;
+   padding: 3rem;
+   border-top: 1px solid #555;
+}
+
+footer h4 {
+   text-align: center;
+   font-weight: 600;
+   font-size: 1rem;
+   margin-bottom: .5rem;
+}
+
+footer p {
+   color: #777;
+   font-size: 14px;
+   font-weight: 300;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: .75rem;
+}
+
+.fab {
+   color: var(--red);
+   margin: 0 .5rem;
+}
+
+@media (max-width: 700px) {
+   .nav-links {
+      position: absolute;
+      background: var(--red);
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: .25s;
+   }
+
+   nav .fas {
+      display: block;
+      color: #ffffff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+      stroke: black;
+      stroke-width: 1;
+   }
+
+   .nav-links ul {
+      padding: 30px;
+   }
+
+   .nav-links ul li {
+      display: block;
+      padding: 16px 12px;
+   }
+
+   .nav-links ul li a {
+      font-size: 16px;
+   }
+
+   .text-box {
+      width: 90%;
+   }
+
+   .text-box h1 {
+      font-size: 30px;
+   }
+
+   .text-box p {
+      width: 90%;
+      font-size: 14px;
+   }
+
+   section h1 {
+      font-size: 30px;
+   }
+
+   section p {
+      text-align: center;
+   }
+
+   .row {
+      flex-direction: column;
+   }
+
+   .course-col, .campus-col, .facilities-col, .certificates-col {
+      margin: .75rem auto;
+   }
+
+   .campus-col h3 {
+      text-align: center;
+   }
+
+   .campus-col p, .facilities-col p, .certificates-col p {
+      text-align: left;
+   }
+
+   .testimonial p {
+      text-align: left;
+   }
+
+   .link {
+      font-size: 16px;
+   }
+
+   .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+   }
+
+   .cta {
+      padding: 4rem 1rem;
+   }
+
+   .cta h1 {
+      font-size: 20px;
+   }
+
+   .about-us {
+      text-align: center;
+   }
+
+   .about-col h1, .about-col p {
+      text-align: left;
+   }
+
+   .contact-col div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+   }
+
+   .contact-col div .fas {
+      font-size: 20px;
+      margin-right: 1.5rem;
+   }
+
+   .contact-col div h5 {
+      font-size: 16px;
+      text-align: left;
+   }
+
+   .contact-col div p {
+      text-align: left;
+   }
+
+   .contact-col form {
+      margin-top: 2rem;
+   }
+
+   .blog-left p {
+      text-align: left;
+   }
+
+   .blog-content button, .contact-col button {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+   
+   footer {
+      padding: 3rem 1rem;
+   }
+
+   footer p {
+      width: 100%;
+   }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="images/logos/favicon.png">
+   <title>Contact | Portfolio by Jeffrey Claybrook</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <nav>
+         <a href="index.html" class="brand">Jeffrey Claybrook</a>
+         <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="experience.html">EXPERIENCE</a></li>
+               <li><a href="projects.html">PROJECTS</a></li>
+               <li><a href="resources.html">RESOURCES</a></li>
+               <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+         </div>
+         <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+         <h1>Lets get in touch!</h1>
+      </div>
+   </header>
+   <section class="contact-us">
+      <div class="row">
+         <div class="contact-col">
+            <div>
+               <i class="fas fa-envelope"></i>
+               <span>
+                  <a href="mailto:jeffreyclaybrook15@gmail.com" class="link">jeffreyclaybrook15@gmail.com</a>
+                  <p>Email us your query</p>
+               </span>
+            </div>
+            <div>
+               <i class="fas fa-phone"></i>
+               <span>
+                  <h5>+1 469-226-7022</h5>
+                  <p>Mon - Sat, Sunrise to Sunset</p>
+               </span>
+            </div>
+            <div>
+               <i class="fas fa-home"></i>
+               <span>
+                  <h5>Work Hours</h5>
+                  <p>24/7 starting yesterday</p>
+               </span>
+            </div>
+         </div>
+         <div class="contact-col">
+            <form action="form-handler.php" method="post">
+               <input type="text" name="name" placeholder="Enter your name" required>
+               <input type="email" name="email" placeholder="Enter email address" required>
+               <textarea rows="8" name="message" placeholder="Message" required></textarea>
+               <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+         </div>
+      </div>
+   </section>
+   <footer>
+      <h4>About Us</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut.</p>
+      <div class="icons">
+         <a href="https://www.facebook.com/jeff.claybrook.16/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+         <a href="https://twitter.com/jeffclaybrook" target="_blank"><i class="fab fa-twitter"></i></a>
+         <a href="https://github.com/jeffclaybrook" target="_blank"><i class="fab fa-github"></i></a>
+         <a href="https://linkedin.com/in/jeff-claybrook" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+   </footer>
+   <script src="app.js"></script>
+</body>
+</html>
